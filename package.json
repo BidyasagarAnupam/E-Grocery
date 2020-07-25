@@ -1,0 +1,16 @@
+{
+  "name": "egrocery.com",
+  "version": "1.0.0",
+  "description": "This is a e-commerce like website to create the local grocery shop to online",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bidyasagar Mohapatra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html": "^1.0.0",
+    "nodemon": "^2.0.4"
+  }
+}

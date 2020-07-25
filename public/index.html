@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to E-Grocery.com|New style of marketting</title>
+    <link rel="stylesheet" type="text/css" href="./web-font-with-css/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./img/logo/logob.png" alt="E-Grocery.com">
+        </div>
+        <ul class="item">
+            <li class="items">
+                <a href="/" id="home" class="active" onclick="activeHome()">Home</a>
+            </li>
+            <li class="items" id="menu" onclick="openMenu()">
+                <a href="#" id="createAccount" onclick="activeAccount()">Create Account</a>
+                <ul id="dropDown">
+                    <li class="dropDownList"> <a href="/signUpShop">As a Shopkeeper</a></li>
+                    <li class="dropDownList"> <a href="/signUpCoustomer">As a Coustomer</a></li>
+                </ul>
+            </li>
+            <li class="items" id="menuLogin" onclick="openMenuLogIn()">
+                <a href="#" id="login" onclick="activeLogin()">Login</a>
+                <ul id="dropDownLogin">
+                    <li class="dropDownList"> <a href="/signInShop">As a Shopkeeper</a></li>
+                    <li class="dropDownList"> <a href="/signInCoustomer">As a Coustomer</a></li>
+                </ul>
+            </li>
+            <li class="items">
+                <a href="/allShop" id="allShop" onclick="activeShop()">See All Shop</a>
+            </li>
+            <li class="items">
+                <a href="#" id="aboutUs" onclick="activeAboutUs()">About Us</a>
+            </li>
+        </ul>
+        <div id="searchBox">
+            <form action="" method="POST">
+                <input type="text" placeholder="Search by shop name or your locality..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <!-- <div class="text"></div>
+            <div class="icon"><i class="fas fa-search"></i></div> -->
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <section id="homeSection">
+        <h1 class="h-primary">Welcome to <a href="#">E-Grocery.com</a></h1>
+        <p>#DigitalLocalMarket</p>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilitiesSection">
+        <h1 class="h-primary center">Our Facilities</h1>
+        <div id="facilities">
+            <div class="box">
+                <img src="./img/card/card_internet.jpg" alt="Expand your business through internet">
+                <h3 class="h-secondary center">Expand your business through internet</h3>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="./img/card/card_avoid crowd.jpg" alt="Crowd less marketting">
+                <h3 class="h-secondary center">Crowd less marketting</h3>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="./img/card/card_list.jpg" alt="Don't need to remind your product list">
+                <h3 class="h-secondary center">Don't need to remind your product list</h3>
+                <p class="center"></p>
+            </div>
+            <div class="box">
+                <img src="./img/card/card_save time.jpg" alt="Save your valuable time">
+                <h3 class="h-secondary center">Save your valuable time</h3>
+                <p class="center"></p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Shop slidding Section -->
+    <section id="sliddingSection">
+        <h1 class="h-primary center">Some pictures of Shops</h1>
+        <img alt="pic1" name="slide">
+    </section>
+
+
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Contact Us</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Contact Us</h2>
+            </div>
+            <div id="contact-box">
+                <form action=”mohapatrasatya152@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phNo">Phone Number</label>
+                        <input type="number" name="phNo" id="phNo" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Please give suggestion for the growth of this website..."></textarea>
+                    </div>
+                    <button class="btn" type=”submit” value=”Submit”>submit </button>
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="center">
+            Copyright &copy;2020 <a href="">www.E-Grocery.com</a> | All rights reserved |<br>
+            <div class="developerContact">
+                <span>Developer Contact -->(Bidyasagar Mohapatra) </span>
+                <a href="https://www.facebook.com/bidyasagar.anupam/" target="blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bidyasagar_anupam/" target="blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://github.com/BidyasagarAnupam" target="blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <a href="#homeSection" title="go to top">
+        <div id="goToTop">
+            <i class="fas fa-angle-double-up fa-1x"></i>
+        </div>
+    </a>
+</body>
+<script src="./js/script.js"></script>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up for Shopkeeper | E-Grocery.com</title>
+    <link rel="stylesheet" type="text/css" href="./web-font-with-css/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./img/logo/logob.png" alt="E-Grocery.com">
+        </div>
+        <ul class="item">
+            <li class="items">
+                <a href="/" id="home" onclick="activeHome()">Home</a>
+            </li>
+            <li class="items" id="menu" onclick="openMenu()">
+                <a href="#" class="active" id="createAccount" onclick="activeAccount()">Create Account</a>
+                <ul id="dropDown">
+                    <li class="dropDownList"> <a href="/signUpShop">As a Shopkeeper</a></li>
+                    <li class="dropDownList"> <a href="/signUpCoustomer">As a Coustomer</a></li>
+                </ul>
+            </li>
+            <li class="items" id="menuLogin" onclick="openMenuLogIn()">
+                <a href="#" id="login" onclick="activeLogin()">Login</a>
+                <ul id="dropDownLogin">
+                    <li class="dropDownList"> <a href="/signInShop">As a Shopkeeper</a></li>
+                    <li class="dropDownList"> <a href="/signInCoustomer">As a Coustomer</a></li>
+                </ul>
+            </li>
+            <li class="items">
+                <a href="/allShop" id="allShop" onclick="activeShop()">See All Shop</a>
+            </li>
+            <li class="items">
+                <a href="#" id="aboutUs" onclick="activeAboutUs()">About Us</a>
+            </li>
+        </ul>
+        <div id="searchBox">
+            <form action="" method="POST">
+                <input type="text" placeholder="Search by shop name or your locality..." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <!-- <div class="text"></div>
+            <div class="icon"><i class="fas fa-search"></i></div> -->
+        </div>
+    </nav>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>

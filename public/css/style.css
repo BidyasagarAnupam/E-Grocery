@@ -1,0 +1,423 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 225, 255);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* Navigation Bar: Logo and Images */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 5px;
+}
+
+/* Navigation Bar : List Styling */
+
+#navbar > ul.item {
+    display: flex;
+    padding-left: 12px;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+}
+#navbar ul.item li {
+    list-style: none;
+    font-size: 1.3rem;  
+}
+#navbar > ul.item > li > a {
+    color: white;
+    display: block;
+    padding: 9px 22px;
+    margin-left: 8px;
+    border-radius: 20px;
+    text-decoration: none;  
+    /* transition: all 1.2s ease; */
+    position: relative;
+}
+#navbar > ul.item > li > a:hover ,#navbar ul li a.active {
+    color: black;
+    background-color: white; 
+}
+
+/* Dropdown */
+#dropDown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 3px 2px #5c5858;
+    margin-left: 20px;
+    margin-top: 7px;
+    padding: 7px 7px;
+    height: 100px;
+}
+#dropDown > li.dropDownList {
+    margin-top: 10px;
+}
+ul#dropDown > li.dropDownList > a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+ul#dropDown > li.dropDownList > a:hover {
+    background-color: #727272;
+    color: white;
+}
+#dropDown.active {
+    display: block;
+}
+
+#dropDownLogin {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 3px 2px #5c5858;
+    margin-left: 20px;
+    margin-top: 7px;
+    padding: 7px 7px;
+    height: 100px;
+}
+#dropDownLogin > li.dropDownList {
+    margin-top: 10px;
+}
+ul#dropDownLogin > li.dropDownList > a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+ul#dropDownLogin > li.dropDownList > a:hover {
+    background-color: #727272;
+    color: white;
+}
+#dropDownLogin.active {
+    display: block;
+}
+
+/* Navigation bar: Search Box */
+#searchBox input[type=text] {
+    border: 2px solid white;
+    margin-left: 63px;
+    height: 44px;
+    width: 366px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 17px;
+    padding: 10px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+}
+#searchBox button {
+    padding: 11px;
+    border-radius: 20px;
+    outline: none;
+    position: relative;
+    right: 44px;
+    cursor: pointer;
+    background-color: white;
+}
+#searchBox button:hover {
+    background-color: rgb(168, 168, 168);
+    color: white;
+}
+
+/* Home Section */
+#homeSection {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    padding: 3px 170px;
+    justify-content: center;
+    align-items: center;
+}
+#homeSection::before {
+    content: "";
+    background: url('../img/bg/bg_main.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+#homeSection h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#homeSection p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+#homeSection a {
+    color: black;
+}
+
+/* Facilities Section */
+#facilities {
+    margin: 34px;
+    display: flex;
+}
+#facilities .box {
+    border: 2px solid rgb(0, 225, 255);
+    padding: 34px;
+    width: 25%;
+    margin: 25px 27px;
+    border-radius: 28px;
+    background-color: #c9c9c9;
+}
+#facilities .box img {
+    height: 83px;
+    margin: auto;
+    display: block;
+}
+#facilities .box h3 {
+    font-weight: bold;
+}
+#facilities .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* Slidding section */
+#sliddingSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#sliddingSection img{
+    margin: 32px 0;
+    height:450px;
+    width:90%;
+    box-shadow: 7px 5px 9px 6px #5a5a5a;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  background: url('../img/bg/bg_login.jpg') no-repeat center center/cover;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: rgb(0, 225, 255);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid rgb(0, 225, 255);
+    border-radius: 9px;
+    font-size: 1.1rem;
+    outline: none;
+}
+#contact-box form {
+    width: 40%;
+    
+}
+#contact-box form label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+.btn {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    outline: none;
+    background-color: rgb(0, 225, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.btn:hover {
+    background-color: rgba(0, 193, 218, 0.514);
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: rgb(0, 225, 255);
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 31px;
+    right: 24px;
+    /* margin-right: -24px; */
+    z-index: 10;
+    height: 41px;
+    width: 100px;
+    background-color: #3dd8e8;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 2px 3px 12px 1px #413e3e;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#myBtn:hover {
+    height: 45px;
+    width: 105px;
+    color: red;
+}
+
+/* Footer  Section*/
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* Primery Section */
+.h-primary {
+    font-size: 5.2em;
+}
+.center {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: red;
+}
+#goToTop {
+    display: none;
+    position: fixed;
+    bottom: 31px;
+    left: 24px;
+    z-index: 10;
+    height: 50px;
+    width: 50px;
+    background-color: #3dd8e8;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 2px 3px 12px 1px #413e3e;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+}
+#goToTop i {
+    margin: 17px 20px;
+}
+
