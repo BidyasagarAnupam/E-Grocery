@@ -1,0 +1,143 @@
+#mainSection form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mainSection form::before {
+    content: "";
+    background: url('../img/bg/bg-SignUp.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+}
+#mainSection input,
+#mainSection textarea {
+    width: 95%;
+    padding: 0.5rem;
+    border: 2px solid rgb(0, 225, 255);
+    border-radius: 9px;
+    font-size: 1.1rem;
+    outline: none;
+    margin: 5px 0;
+}
+#mainSection label {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+form div#formContent  {
+    background-color: rgba(245, 245, 245, 0.787);
+    width: 790px;
+    height: 449px;
+    padding: 22px 39px;
+    margin-top: 27px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    box-shadow: 8px 7px 10px 2px #0a3d40;
+    overflow-y: auto;
+}
+form div#formContent  #aboutPerson{
+    background-color: rgba(7, 241, 210, 0.787);
+    border-radius: 12px;
+    padding: 3px 8px;
+}
+hr {
+    width: 100%;
+    margin: 5px;
+}
+form div#formContent  #aboutShop{
+    background-color: rgba(75, 243, 255, 0.787);
+    border-radius: 12px;
+    padding: 3px 8px;
+}
+#aboutShop h2,h3 {
+    text-decoration: none;
+    margin-bottom: 8px;
+    color: gray;
+}
+div#aboutShop div.collections {
+    display: flex;
+    flex-direction: row;
+}
+
+div#aboutShop .photoCollections {
+    display: flex;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.698);
+    margin:8px 0;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+div#aboutShop .imgPreview {
+    width: 100%;
+    min-height: 220px;
+    /* border: 2px solid rgb(141, 11, 11); */
+    margin-top: 15px;
+    
+    /* Default text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc;
+    
+}
+div#aboutShop .imgPreview .imagePreviewImage {
+    display: none;
+    width: 100%;
+}
+div#aboutShop .imgPreview .imagePreviewDefaultText {
+    color: gray;
+    font-size: 25px;
+}
+div#aboutShop input[type="file"] {
+    width: 246px;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+form button.btn {
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*design for scrool bar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 225, 255); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(44, 219, 219); 
+  }

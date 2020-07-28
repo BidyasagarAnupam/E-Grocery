@@ -245,7 +245,7 @@ ul#dropDownLogin > li.dropDownList > a:hover {
 .modal-content {
   position: relative;
   background-color: #fefefe;
-  background: url('../img/bg/bg_login.jpg') no-repeat center center/cover;
+  background: url('../img/bg/bg-Login.jpg') no-repeat center center/cover;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -317,6 +317,14 @@ ul#dropDownLogin > li.dropDownList > a:hover {
     font-family: 'Bree Serif', serif;
 
 }
+.modal-footer {
+    padding: 2px 16px;
+    background-color: rgb(0, 225, 255);
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
 .btn {
     width: 100%;
     padding: 0.5rem;
@@ -333,14 +341,6 @@ ul#dropDownLogin > li.dropDownList > a:hover {
     background-color: rgba(0, 193, 218, 0.514);
 }
 
-.modal-footer {
-    padding: 2px 16px;
-    background-color: rgb(0, 225, 255);
-    color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    text-align: center;
-}
 
 #myBtn {
     position: fixed;
