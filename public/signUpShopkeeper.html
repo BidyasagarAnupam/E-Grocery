@@ -53,6 +53,7 @@
     <section id="mainSection">
         <form action="">
             <div id="formContent">
+                <h1 class="center headding">Sign Up for Shopkeeper</h1>
                 <div id="aboutPerson">
                     <h1 class="center">Details about you</h1>
                     <div class="form-group">
@@ -64,12 +65,25 @@
                         <input type="text" name="lname" id="lname" required placeholder="Enter your last name...">
                     </div>
                     <div class="form-group">
+                        <label for="phNo">Phone Number</label>
+                        <input type="number" name="phNo" id="phNo" required placeholder="Enter your phone number...">
+                    </div>
+                    <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" required placeholder="Enter your Email...">
                     </div>
-                    <div class="form-group">
-                        <label for="phNo">Phone Number</label>
-                        <input type="number" name="phNo" id="phNo" required placeholder="Enter your phone number...">
+                    <div class="collections">
+                        <div class="form-group formGroup1">
+                            <label for="psw">Password</label>
+                            <input type="password" name="psw" id="psw" pattern="[A-Za-z0-9]{6,8}" title="Password must be contain A-Z, a-z, 0-9 and 6 to 8 length" required placeholder="Enter a strong password...">
+                            <i id="pass-status" class="fas fa-eye" title="Show password" onClick="viewPassword('psw', this)"></i>
+
+                        </div>
+                        <div class="form-group formGroup2">
+                            <label for="cpsw">Re-password</label>
+                            <input type="password" name="cpsw" id="cpsw" required placeholder="Enter your password again..." onkeyup="testPassword()">
+                            <i id="pass-status1" class="fas fa-eye" title="Show password" onClick="viewPassword('cpsw', this)"></i>
+                        </div>
                     </div>
                 </div>
                 <hr>
@@ -91,7 +105,7 @@
                         </div>
                         <div class="form-group">
                             <label for="pin">Pin</label>
-                            <input type="number" name="pin" id="pin" required placeholder="Enter your pin...">
+                            <input type="number" name="pin" id="pin" required pattern="[0-9]{6}" title="Pin must be 6 digits number" placeholder="Enter your pin code...">
                         </div>
                     </div>
                     <div class="collections">
@@ -165,6 +179,6 @@
 <script src="./js/script.js"></script>
 <script src="./js/adjustPhoto.js"></script>
 <script src="./js/previewImages.js"></script>
-
+<script src="./js/adjustPassword.js"></script>
 
 </html>

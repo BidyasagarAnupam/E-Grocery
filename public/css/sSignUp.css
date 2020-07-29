@@ -49,6 +49,18 @@ hr {
     width: 100%;
     margin: 5px;
 }
+.formGroup1 i{
+    position: relative;
+    bottom: 33px;
+    left: 281px;
+    cursor: pointer;
+}
+.formGroup2 i{
+    position: relative;
+    bottom: 33px;
+    left: 308px;
+    cursor: pointer;
+}
 form div#formContent  #aboutShop{
     background-color: rgba(75, 243, 255, 0.787);
     border-radius: 12px;
@@ -59,7 +71,7 @@ form div#formContent  #aboutShop{
     margin-bottom: 8px;
     color: gray;
 }
-div#aboutShop div.collections {
+div.collections {
     display: flex;
     flex-direction: row;
 }
@@ -140,4 +152,11 @@ form button.btn {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(44, 219, 219); 
+  }
+
+  /* Utility class */
+  .headding {
+      margin-bottom: 5px;
+      color: rgb(0, 117, 133);
+      font-size: 30px;
   }
