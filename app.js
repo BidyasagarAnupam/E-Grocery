@@ -12,9 +12,12 @@ app.get("/",(req, res)=> {
 app.get("/signUpShop",(req, res)=> {
     res.status(201).sendFile(path.join(__dirname,'public','signUpShopkeeper.html'));
 });
+app.get("/signUpCustomer",(req, res)=> {
+    res.status(202).sendFile(path.join(__dirname,'public','signUpCustomer.html'));
+});
 
 app.get("/allshop",function(req, res) {
-    res.status(202).sendFile(path.join(__dirname,'public','allshop.html'));
+    res.status(203).sendFile(path.join(__dirname,'public','allshop.html'));
 });
 
 app.listen(port, ()=> {

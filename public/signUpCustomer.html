@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up for Shopkeeper | E-Grocery.com</title>
+    <title>Sign Up for customer | E-Grocery.com</title>
     <link rel="stylesheet" type="text/css" href="./web-font-with-css/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sSignUp.css">
 </head>
-
 <body>
     <!-- Navbar Section -->
     <nav id="navbar">
@@ -53,7 +51,7 @@
     <section id="mainSection">
         <form action="">
             <div id="formContent">
-                <h1 class="center headding">Sign Up for Shopkeeper</h1>
+                <h1 class="center headding">Sign Up for Customer</h1>
                 <div id="aboutPerson">
                     <h1 class="center">Details about you</h1>
                     <div class="form-group">
@@ -88,16 +86,11 @@
                 </div>
                 <hr>
                 <div id="aboutShop">
-                    <h1 class="center">Details about your shop</h1>
-                    <div class="form-group">
-                        <label for="sName">Name of your shop</label>
-                        <input type="text" name="sName" id="sName" required placeholder="Enter your shop name...">
-                    </div>
-                    <h2>Address of your shop...</h2>
+                    <h1 class="center">Your Address</h1>
                     <div class="collections">
                         <div class="form-group">
                             <label for="state">State</label>
-                            <input type="state" name="state" id="state" required placeholder="Enter your state...">
+                            <input type="text" name="state" id="state" required placeholder="Enter your state...">
                         </div>
                         <div class="form-group">
                             <label for="dist">District</label>
@@ -118,49 +111,12 @@
                             <input type="text" name="lArea" id="lArea" required placeholder="Enter your local area...">
                         </div>
                     </div>
-                    <h3>Upload 5 pictures of your shop(Pictures are should be landscape like rectangle)...</h3>
-                    <div class="photoCollections">
-                        <div class="imgPreview" id="imgPreview1">
-                            <img src="" alt="Image Preview" class="imagePreviewImage">
-                            <span class="imagePreviewDefaultText">Image Preview</span>
-                        </div>
-                        <input type="file" name="inpFile" id="inpFile1" onClick="ids(this,'imgPreview1')">
-                    </div>
-                    <div class="photoCollections">
-                        <div class="imgPreview" id="imgPreview2">
-                            <img src="" alt="Image Preview" class="imagePreviewImage">
-                            <span class="imagePreviewDefaultText">Image Preview</span>
-                        </div>
-                        <input type="file" name="inpFile" id="inpFile2" onClick="ids(this,'imgPreview2')">
-                    </div>
-                    <div class="photoCollections">
-                        <div class="imgPreview" id="imgPreview3">
-                            <img src="" alt="Image Preview" class="imagePreviewImage">
-                            <span class="imagePreviewDefaultText">Image Preview</span>
-                        </div>
-                        <input type="file" name="inpFile" id="inpFile3" onClick="ids(this,'imgPreview3')">
-                    </div>
-                    <div class="photoCollections">
-                        <div class="imgPreview" id="imgPreview4">
-                            <img src="" alt="Image Preview" class="imagePreviewImage">
-                            <span class="imagePreviewDefaultText">Image Preview</span>
-                        </div>
-                        <input type="file" name="inpFile" id="inpFile4" onClick="ids(this,'imgPreview4')">
-                    </div>
-                    <div class="photoCollections">
-                        <div class="imgPreview" id="imgPreview5">
-                            <img src="" alt="Image Preview" class="imagePreviewImage">
-                            <span class="imagePreviewDefaultText">Image Preview</span>
-                        </div>
-                        <input type="file" name="inpFile" id="inpFile5" onClick="ids(this,'imgPreview5')">
-                    </div>
+                    
                 </div>
                 <button class="btn" type=”submit” value=”Submit”>submit </button>
             </div>
         </form>
     </section>
-
-
 
     <!-- Footer Section -->
     <footer>
@@ -177,8 +133,5 @@
     </footer>
 </body>
 <script src="./js/script.js"></script>
-<script src="./js/adjustPhoto.js"></script>
-<script src="./js/previewImages.js"></script>
 <script src="./js/adjustPassword.js"></script>
-
 </html>
