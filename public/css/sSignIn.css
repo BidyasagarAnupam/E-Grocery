@@ -1,0 +1,30 @@
+form #formContent {
+    margin-bottom: 38px;
+}
+#signInContent {
+    background-color: rgba(7, 241, 210, 0.787);
+    border-radius: 12px;
+    padding: 41px 60px;
+    margin: 45px 31px;
+}
+.form-group i {
+    position: relative;
+    bottom: 0px;
+    right: 39px;
+    cursor: pointer;
+}
+.btn1 {
+    width: 95%;
+    border-radius: 12px;
+    height: 38px;
+    outline: none;
+    background-color: #41ddef;
+    border: 2px solid #007694;
+    color: white;
+    font-size: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.btn1:hover {
+    background-color: #19c2d4;
+}

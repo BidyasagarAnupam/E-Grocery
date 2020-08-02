@@ -15,9 +15,15 @@ app.get("/signUpShop",(req, res)=> {
 app.get("/signUpCustomer",(req, res)=> {
     res.status(202).sendFile(path.join(__dirname,'public','signUpCustomer.html'));
 });
+app.get("/signInCustomer",(req, res)=> {
+    res.status(203).sendFile(path.join(__dirname,'public','signInCustomer.html'));
+});
+app.get("/signInShopkeeper",(req, res)=> {
+    res.status(203).sendFile(path.join(__dirname,'public','signInShopkeeper.html'));
+});
 
 app.get("/allshop",function(req, res) {
-    res.status(203).sendFile(path.join(__dirname,'public','allshop.html'));
+    res.status(206).sendFile(path.join(__dirname,'public','allshop.html'));
 });
 
 app.listen(port, ()=> {

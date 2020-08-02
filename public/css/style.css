@@ -27,9 +27,9 @@ html {
     opacity: 0.7;
 }
 /* Navigation Bar: Logo and Images */
-#logo {
+/* #logo {
     margin: 10px 34px;
-}
+} */
 
 #logo img {
     height: 59px;
@@ -159,6 +159,7 @@ ul#dropDownLogin > li.dropDownList > a:hover {
     padding: 3px 170px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 17px;
 }
 #homeSection::before {
     content: "";
@@ -315,6 +316,7 @@ ul#dropDownLogin > li.dropDownList > a:hover {
 #contact-box form label{
     font-size: 1.3rem;
     font-family: 'Bree Serif', serif;
+    color: white;
 
 }
 .modal-footer {
