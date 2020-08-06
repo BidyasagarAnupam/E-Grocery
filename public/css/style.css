@@ -4,6 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* For preloader */
+#loading {
+    /* display: none; */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('../img/gif/home.gif') no-repeat center;
+    z-index: 10000;
+    overflow: hidden;
+}
 html {
     scroll-behavior: smooth;
 }

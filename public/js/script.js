@@ -1,14 +1,15 @@
 // var width = window.outerWidth;
 // console.log(width);
 // if(width > 1395) {
-//     console.log(width + " omg");
-// } else {
-//     console.log(width + " omgggggggg");
+    //     console.log(width + " omg");
+    // } else {
+        //     console.log(width + " omgggggggg");
+        
+        // }
+        
 
-// }
-
-
-// for dropdown menu
+        
+        // for dropdown menu
 function openMenu() {
     var dropDown = document.getElementById("dropDown");
     dropDown.classList.toggle("active");
@@ -116,5 +117,10 @@ function activeAboutUs() {
 
 }
 
+// for preloader
+var preloader = document.getElementById('loading');
+window.addEventListener('load', function() {
+    preloader.style.display = 'none';
+})
 
 
